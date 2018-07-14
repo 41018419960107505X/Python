@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+{% load static from staticfiles%}
+
+{% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'mine/css/showAddress.css' %}" />
+{% endblock link%}
+{% block script %}
+<script type="text/javascript" charset="utf-8" src="{% static 'mine/js/showAddress.js' %}"></script>
+{% endblock script %}
+{% block main %}
+    <div id="showDiv">
+         <a href="/mine/" id=" reverseback"><p>&lt;返回</p></a>
+         {% for address in addresses %}
+         <ul id="#">
+              <li>收货人姓名：{{ address.name }}</li>
+              <li>收货人电话：{{ address.phoneNum }}</li>
+              <li>收货地址：{{ address.detailAddress }}</li>
+         </ul>
+
+        {% endfor %}
+        <ul>
+          <a href="/address/"><li>新增收货地址</li></a>
+        </ul>
+    </div>
+
+{% endblock main %}
+{% block footer %}
+    <ul>
+        <a href="/address/"><li>添加新地址</li></a>
+    </ul>
+{% endblock footer %}
+
+
+
+
+

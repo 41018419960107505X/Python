@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+{% load static from staticfiles%}
+
+{% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'mine/css/address.css' %}" />
+{% endblock link%}
+{% block script %}
+<script type="text/javascript" charset="utf-8" src="{% static 'mine/js/address.js' %}"></script>
+{% endblock script %}
+
+{% block main %}
+    <form action="/address/" method="post">
+        {% csrf_token %}
+    <div id="addressDiv">
+        <a href="/showAddress/" id=" reverseback"><p>&lt;返回</p></a>
+        <div id="delivery">
+            <ul>
+                <li><span>新增收货地址</span><a href="/address/"><input type="submit" value="保存"></a></li>
+            </ul>
+            <ul>
+                <li>姓名：<input type="text" name="name" placeholder="请输入姓名"></li>
+                <li>性别：<input type="radio" name="sex" value="1">男&nbsp;&nbsp;<input type="radio" name="sex" value="0" >女</li>
+                <li>手机号：<input type="text" name="phoneNum" placeholder="请输入手机号"></li>
+                <li>邮编：<input type="text" name="postCode" placeholder="请输邮编"></li>
+                <li>详细地址：<input type="text" name="detailAddress" placeholder="收货地址"></li>
+                <li>省份：<input type="text" name="province"></li>
+                <li>城市：<input type="text" name="city"></li>
+                <li>区/县：<input type="text" name="county"></li>
+                <li>街道：<input type="text" name="street"></li>
+
+            </ul>
+        </div>
+
+    </div>
+    </form>
+{% endblock main %}

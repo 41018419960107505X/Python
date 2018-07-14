@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}cart{% endblock title %}
+
+{% block link %}
+<link type="text/css" rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
+{% endblock link %}
+{% block script %}
+<script type="text/javascript" src="{% static 'cart/js/cart.js' %}"></script>
+{% endblock script %}
+
+{% block main %}
+<div id="cartDiv">
+    <h3><b>购物车</b></h3>
+
+    <section class="full">
+		<section>
+            <menu>
+				<ul>
+                    {% for item in carts %}
+                    <li class="menuList">
+                        <div class="confirm">
+                            <span cartid="{{ item.id }}" class="ischeck">
+                                <span id="{{ item.id }}">
+                                {% ifequal True item.isCheck %}
+                                √
+                                {% endifequal %}
+                                </span>
+                            </span>
+                        </div>
+                        <a href="#">
+                            <img src="{{ item.product.img }}" />
+                            <p>{{ item.product.longName }}</p>
+                            <span class="">￥{{ item.product.price }}</span>
+                        </a>
+
+{#                        <section>#}
+{#						    <button pd="{{item.product.productid}}" class="subShopping">-</button>#}
+{#                            <span id="pnum{{item.product.productid}}">{{item.productnum}}</span>#}
+{#						    <button pd="{{item.product.productid}}" class="addShopping">+</button>#}
+{#					</section>#}
+                    </li>
+                    {% endfor %}
+
+					<li class="payTheBill">
+						<div class="confirm"><span><span>
+                            {% if trueFlag %}
+                            √
+                            {% endif %}
+                        </span></span></div>
+						<p><span>全选</span><span>共计:</span><span>总价</span></p>
+						<a id="ok">选好了</a>
+					</li>
+				</ul>
+			</menu>
+		</section>
+	</section>
+</div>
+{% endblock main %}
+

@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% load static from staticfiles%}
+
+{% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'mine/css/login.css' %}" />
+{% endblock link%}
+{% block script %}
+<script type="text/javascript" charset="utf-8" src="{% static 'mine/js/login.js' %}"></script>
+{% endblock script %}
+
+
+{% block main %}
+<div id="loginDiv">
+    <!--点击返回按钮，返回到进入登录界面之前的界面-->
+    <a href="/mine/"><p>&lt;返回</p></a>
+    <div id="box">
+        <form action="/login/" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleInputEmail1">手机:</label>
+                <input id="phone" type="text" class="form-control" id="exampleInputEmail1" placeholder="username" name="username">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">验证码:</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" name="passwd">
+              </div>
+            <button id="smsBtn" type="button" class="btn btn-default">发送验证码</button>
+            <button type="submit" class="btn btn-default">登陆</button>
+        </form>
+    </div>
+</div>
+{% endblock main %}
+
+
+
+
+
