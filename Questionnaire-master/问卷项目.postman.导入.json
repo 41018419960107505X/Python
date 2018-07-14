@@ -1,0 +1,865 @@
+{
+	"id": "77f38927-821f-45a0-bf58-fb3dc0941569",
+	"name": "问卷项目",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"b79a67b4-b6c0-403d-851d-f1091a96d238",
+		"b303d949-bd89-4ed4-9da5-b2ba7406cf1d",
+		"dda4d3fd-ec21-4588-8ebb-379b884d8126",
+		"5f10b14b-5a5e-4656-86f2-fd8d18c59690"
+	],
+	"folders": [
+		{
+			"id": "457a0d4d-dfc8-4252-b2f7-26aa62ffe50a",
+			"name": "发布问卷",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "dda4d3fd-ec21-4588-8ebb-379b884d8126",
+			"order": [
+				"0c532aa8-d1af-404e-a1a9-4c0c75dd856f"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "dda4d3fd-ec21-4588-8ebb-379b884d8126",
+			"name": "客户接口",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": null,
+			"order": [],
+			"folders_order": [
+				"457a0d4d-dfc8-4252-b2f7-26aa62ffe50a",
+				"b62fdc19-d631-48e2-8ff7-71a50768a1de",
+				"9bfd393e-ec75-4dac-9cef-672284b9c761"
+			]
+		},
+		{
+			"id": "5f10b14b-5a5e-4656-86f2-fd8d18c59690",
+			"name": "普通用户接口",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": null,
+			"order": [],
+			"folders_order": [
+				"ecd9df6f-cd49-4324-9694-04fad05a00d9",
+				"2887031d-3921-488e-9360-de6c049e7b6b"
+			]
+		},
+		{
+			"id": "903b7ddb-03d5-4829-b14a-6518ec36c043",
+			"name": "用户",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "b303d949-bd89-4ed4-9da5-b2ba7406cf1d",
+			"order": [
+				"ca35d28a-51af-4665-b1fb-1d0d2db57b84",
+				"c5a4b7db-996b-4481-b079-2f8c6dc9095b",
+				"a953ad22-e08e-46ea-b717-d261011d4ece",
+				"11ab3aee-6344-44f0-8f87-d44aaaff026f"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "f98dd10e-c21d-40e1-b910-60507615205e",
+			"name": "登录退出",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "b303d949-bd89-4ed4-9da5-b2ba7406cf1d",
+			"order": [
+				"381faecd-fcb7-49ee-9ad2-82821d71882e",
+				"5d325a3b-19d5-42d7-a35d-90ba15acd824",
+				"0e5ec0fa-fc8a-4094-a968-e1ffb67a4134"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "b79a67b4-b6c0-403d-851d-f1091a96d238",
+			"name": "管理员接口",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": null,
+			"order": [],
+			"folders_order": [
+				"e87ff69f-39f0-461b-8bc9-95f2d3ac7b12"
+			]
+		},
+		{
+			"id": "b303d949-bd89-4ed4-9da5-b2ba7406cf1d",
+			"name": "通用接口",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": null,
+			"order": [],
+			"folders_order": [
+				"5138730e-da8a-4812-9099-bec444b88490",
+				"903b7ddb-03d5-4829-b14a-6518ec36c043",
+				"f98dd10e-c21d-40e1-b910-60507615205e"
+			]
+		},
+		{
+			"id": "5138730e-da8a-4812-9099-bec444b88490",
+			"name": "问卷",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "b303d949-bd89-4ed4-9da5-b2ba7406cf1d",
+			"order": [
+				"1b58f1eb-e7b9-4113-9d05-a06c9d60af81"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "ecd9df6f-cd49-4324-9694-04fad05a00d9",
+			"name": "问卷参与信息",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "5f10b14b-5a5e-4656-86f2-fd8d18c59690",
+			"order": [
+				"1ff1de6a-a109-4b49-aac4-d17bafd46a3d",
+				"91355cfe-fe43-4d63-bce6-8ae435797f1c",
+				"e5f82202-8dc2-4626-aa67-8575dd7c84cd"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "e87ff69f-39f0-461b-8bc9-95f2d3ac7b12",
+			"name": "问卷审核",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "b79a67b4-b6c0-403d-851d-f1091a96d238",
+			"order": [
+				"ec78f87d-35b5-4e6b-bb20-b5a39c8316c0"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "2887031d-3921-488e-9360-de6c049e7b6b",
+			"name": "问卷答题",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "5f10b14b-5a5e-4656-86f2-fd8d18c59690",
+			"order": [
+				"fd70ce29-f94f-4b89-a2c9-9648c065061f",
+				"5a2fea2c-f302-4fd4-b7f0-814d23a6396b",
+				"7b4f7119-5590-4a6d-80c2-15ce1920a447"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "b62fdc19-d631-48e2-8ff7-71a50768a1de",
+			"name": "问卷管理",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "dda4d3fd-ec21-4588-8ebb-379b884d8126",
+			"order": [
+				"20180ee5-4bef-4ce0-92ba-d3d32e4a2dfa",
+				"62ee778b-52b7-4412-9fb7-73f53d56a3b5",
+				"1333fddc-64ed-4ded-a7d9-ad0024e44c63",
+				"beeea83f-c5ef-408d-b747-b730b02e453c"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "9bfd393e-ec75-4dac-9cef-672284b9c761",
+			"name": "问题管理",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "77f38927-821f-45a0-bf58-fb3dc0941569",
+			"folder": "dda4d3fd-ec21-4588-8ebb-379b884d8126",
+			"order": [
+				"a678d16c-05f4-436e-af13-d48962de7300",
+				"3dd823a7-0121-4b79-965e-2e266a134df2",
+				"6401e626-abda-40cf-97ab-2de6997a5b38"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "0c532aa8-d1af-404e-a1a9-4c0c75dd856f",
+			"name": "发布问卷",
+			"url": "{{api}}questionnaire_state",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "457a0d4d-dfc8-4252-b2f7-26aa62ffe50a",
+			"rawModeData": "{\n  \"questionnaire_id\":44\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0e5ec0fa-fc8a-4094-a968-e1ffb67a4134",
+			"name": "退出",
+			"url": "{{api}}session",
+			"description": "用户退出",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "f98dd10e-c21d-40e1-b910-60507615205e",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "11ab3aee-6344-44f0-8f87-d44aaaff026f",
+			"name": "更新用户信息",
+			"url": "{{api}}user",
+			"description": "",
+			"data": [
+				{
+					"key": "name",
+					"value": "千峰",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "age",
+					"value": "18",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birthday",
+					"value": "1980-11-21",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "photo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "18723471982",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "xxx@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "杭州江干区",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qq",
+					"value": "123456789123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "wechat",
+					"value": "jdiaq2uasdi2adffafadkf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "job",
+					"value": "会计",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "salary",
+					"value": "保密",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "903b7ddb-03d5-4829-b14a-6518ec36c043",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1333fddc-64ed-4ded-a7d9-ad0024e44c63",
+			"name": "更新问卷",
+			"url": "{{api}}customer_questionnaire",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "b62fdc19-d631-48e2-8ff7-71a50768a1de",
+			"rawModeData": "{\n  \"questionnaire_id\":1,\n  \"title\":\"测试更新问卷标题2\",\n  \"quantity\":100,\n  \"state\":0\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1b58f1eb-e7b9-4113-9d05-a06c9d60af81",
+			"name": "获取首页问卷表",
+			"url": "{{api}}questionnaire",
+			"description": "本接口根据登录的用户类型来进行问卷的筛选\n- 超级管理员:可以查看所有问卷\n- 普通用户:只能搜索已发布的问卷\n- 未登录用户:只能查看已发布的问卷",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5138730e-da8a-4812-9099-bec444b88490",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1ff1de6a-a109-4b49-aac4-d17bafd46a3d",
+			"name": "参与问卷调查",
+			"url": "{{api}}questionnaire_join",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "ecd9df6f-cd49-4324-9694-04fad05a00d9",
+			"rawModeData": "{\n  \"questionnaire_id\":44\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "20180ee5-4bef-4ce0-92ba-d3d32e4a2dfa",
+			"name": "获取问卷",
+			"url": "{{api}}customer_questionnaire",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "b62fdc19-d631-48e2-8ff7-71a50768a1de",
+			"rawModeData": "",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "381faecd-fcb7-49ee-9ad2-82821d71882e",
+			"name": "是否登录",
+			"url": "{{api}}session",
+			"description": "获取session是否登录",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "f98dd10e-c21d-40e1-b910-60507615205e",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "3dd823a7-0121-4b79-965e-2e266a134df2",
+			"name": "更新问题",
+			"url": "{{api}}customer_question",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9bfd393e-ec75-4dac-9cef-672284b9c761",
+			"rawModeData": "{\n  \"question_id\":2,\n  \"items\":[\"选项1\",\"选项2\",\"选项3\",\"选项4\"],\n  \"is_checkbox\":true\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5a2fea2c-f302-4fd4-b7f0-814d23a6396b",
+			"name": "更新问卷答案",
+			"url": "{{api}}questionnaire_answer",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "2887031d-3921-488e-9360-de6c049e7b6b",
+			"rawModeData": "{\n  \"questionnaire_id\":44,\n  \"questions\":[\n      {\n        \"question_id\":6,\n        \"items\":[29]\n      }\n    ]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5d325a3b-19d5-42d7-a35d-90ba15acd824",
+			"name": "登录",
+			"url": "{{api}}session",
+			"description": "用户登录",
+			"data": [
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "a",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "1234admin",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "customer1",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "1234567",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "userinfo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "1234567",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": false
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "f98dd10e-c21d-40e1-b910-60507615205e",
+			"headers": "//Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "62ee778b-52b7-4412-9fb7-73f53d56a3b5",
+			"name": "创建问卷",
+			"url": "{{api}}customer_questionnaire",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "b62fdc19-d631-48e2-8ff7-71a50768a1de",
+			"rawModeData": "{\n  \"title\":\"测试问卷8\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6401e626-abda-40cf-97ab-2de6997a5b38",
+			"name": "删除问题",
+			"url": "{{api}}customer_question",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9bfd393e-ec75-4dac-9cef-672284b9c761",
+			"rawModeData": "{\n  \"ids\":[3,5]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b4f7119-5590-4a6d-80c2-15ce1920a447",
+			"name": "提交问卷答案",
+			"url": "{{api}}questionnaire_answer",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "2887031d-3921-488e-9360-de6c049e7b6b",
+			"rawModeData": "{\n  \"questionnaire_id\":44,\n  \"questions\":[\n      {\n        \"question_id\":6,\n        \"items\":[29]\n      }\n    ]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "91355cfe-fe43-4d63-bce6-8ae435797f1c",
+			"name": "退出问卷调查",
+			"url": "{{api}}questionnaire_join",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "ecd9df6f-cd49-4324-9694-04fad05a00d9",
+			"rawModeData": "{\n  \"ids\":[1,2,3]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a678d16c-05f4-436e-af13-d48962de7300",
+			"name": "添加问题",
+			"url": "{{api}}customer_question",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9bfd393e-ec75-4dac-9cef-672284b9c761",
+			"rawModeData": "{\n  \"questionnaire_id\":45,\n  \"title\":\"题目4\",\n  \"items\":[\"aaaa\",\"bbbbb\",\"ccccc\"],\n  \"is_checkbox\":false\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a953ad22-e08e-46ea-b717-d261011d4ece",
+			"name": "注册用户",
+			"url": "{{api}}user",
+			"description": "",
+			"data": [
+				{
+					"key": "username",
+					"value": "userinfo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "1234567",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ensure_password",
+					"value": "1234567",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "regist_code",
+					"value": "78715",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "userinfo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "x-method",
+					"value": "put",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": false
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "903b7ddb-03d5-4829-b14a-6518ec36c043",
+			"headers": "x-method: put\n//Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "beeea83f-c5ef-408d-b747-b730b02e453c",
+			"name": "删除问卷",
+			"url": "{{api}}customer_questionnaire",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "b62fdc19-d631-48e2-8ff7-71a50768a1de",
+			"rawModeData": "{\n  \"ids\":[2,3,4,5,6]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c5a4b7db-996b-4481-b079-2f8c6dc9095b",
+			"name": "获取用户信息",
+			"url": "{{api}}user",
+			"description": "",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "903b7ddb-03d5-4829-b14a-6518ec36c043",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ca35d28a-51af-4665-b1fb-1d0d2db57b84",
+			"name": "获取注册码",
+			"url": "{{api}}regist_code",
+			"description": "",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "903b7ddb-03d5-4829-b14a-6518ec36c043",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e5f82202-8dc2-4626-aa67-8575dd7c84cd",
+			"name": "获取参与信息",
+			"url": "{{api}}questionnaire_join",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "ecd9df6f-cd49-4324-9694-04fad05a00d9",
+			"rawModeData": "{\n  \"questionnaire_id\":44\n}",
+			"headers": "//Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec78f87d-35b5-4e6b-bb20-b5a39c8316c0",
+			"name": "提交审核信息",
+			"url": "{{api}}questionnaire_comment",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e87ff69f-39f0-461b-8bc9-95f2d3ac7b12",
+			"rawModeData": "{\n  \"questionnaire_id\":44,\n  \"is_agree\":true,\n  \"comment\":\"测试提交审核的内容\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "fd70ce29-f94f-4b89-a2c9-9648c065061f",
+			"name": "获取问卷答案",
+			"url": "{{api}}questionnaire_answer",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "2887031d-3921-488e-9360-de6c049e7b6b",
+			"rawModeData": "{\n  \"questionnaire_id\":44,\n  \"questions\":[\n      {\n        \"question_id\":6,\n        \"items\":[29]\n      }\n    ]\n}",
+			"headers": "//Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
