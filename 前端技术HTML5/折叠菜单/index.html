@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>折叠菜单</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		li a{
+			color: #434343;
+			text-decoration-line: none;
+		}
+
+		#menu{
+			width: 160px;
+			margin: 50px;
+		}
+
+		#menu li{
+			font-size: 14px;
+		}
+
+		#menu>li{
+			background:url(../img/03.png); 
+			line-height: 24px;
+			text-indent: 60px;
+		}
+
+		#menu ul{
+			display: none;
+		}
+
+		#menu ul li{
+			text-indent: 30px;
+		}
+		/*伪类选择器*/
+
+		#menu>li:hover ul{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li>
+			<a href="#">菜单一</a>
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">菜单二</a>
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">菜单三</a>
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">菜单四</a>
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

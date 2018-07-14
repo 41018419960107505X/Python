@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JS中的其它基本类型转换成字符串</title>
+	<script src="JS/text.JS" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		//Null--String
+		var str0 = "sunck" +  null
+		console.log(typeof str0);
+		console.log(str0);
+
+		//Undefined--String
+		var str1 = "sunck" +  undefined	
+		console.log(typeof str1);
+		console.log(str1);
+
+		//Boolean--String
+		var str2 = true.toString()
+		console.log(typeof  str2);//string
+		console.log(str2);//"true"
+		console.log(false.toString());//"false"
+
+		//Number--String
+		var num = 10
+		var str3 = num.toString();
+		console.log(typeof(str3));//string
+		console.log(str3);//"10"
+	</script>
+
+</body>
+</html>

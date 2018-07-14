@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的break语句</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			* 格式:
+			* for (语句1； 表达式; 语句3){
+				语句2;	
+			*     }
+			*
+			*逻辑: 当程序执行到for语句时,首先执行语句1(注意:仅仅会执行一次),执行完语句1，计算表达式的值,如果表达式的值为假,则跳过整个for语句,如果表达式的值为真,则执行语句2,执行完语句2再去执行语句3,执行完语句3再去计算表达式的值,如此循环往复,直到表达式的值为假才停止.
+			*
+		*/	
+		//1 + 2 + 3 + ......+ 10
+		var sum =0;
+		for (var num =1; num <= 10; num++){
+			sum += num;
+
+		}	
+		console,log(sum)
+
+		//死循环
+		for ( ; ; ){
+			console.log("*********************")
+		}
+		
+	</script>
+
+</body>
+</html>

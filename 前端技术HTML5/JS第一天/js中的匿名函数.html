@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的匿名函数</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		var f = function(){
+			console.log("a = " + a);
+		}
+
+		f(123);
+
+		/*
+			通过这种方式定义的函数被称为匿名函数(即:没有名字的函数),当它不赋值给变量单独使用时,可以有两种优雅的用法:
+			//1.可以将匿名函数当做参数传递给其它函数
+			//2.定义匿名函数完成某些一次性任务
+
+		*/	
+
+		function fun(num1 , num2 , num3){
+			return fc(num1 , num2);
+		}	
+
+		var num = fun (1,2,function(a,b){
+			return a + b;
+		});
+		console.log("num = " + num);
+
+		//即时函数
+		
+		(function(str){
+			console.log(str)
+		})("sunck is a good man")
+		
+	</script>
+
+</body>
+</html>

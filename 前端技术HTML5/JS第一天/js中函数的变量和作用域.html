@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中函数的变量和作用域</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			*注意:js中变量的定义并不是以代码块为作用域的，而是以函数作为作用域的
+			*
+			*变量的作用域:变量可以使用的范围
+			*
+			*局部变量:在某个函数中定义的变量,仅仅在该函数内部可以使用
+			*全局变量:定义在所有函数之外的变量
+			*
+
+		*/	
+
+		var num1 = 10;
+
+		function f(){
+			var num2 = 20;
+			//注意:当生声明一个变量时没有使用var语句时,该变量会被默认认为是全局的
+			num3 =30;
+
+			//该函数内部可以向访问自己的局部变量一样去访问全局变量
+			num1++;
+		}	
+		f();
+
+		console.log(num1);
+		//console.log(num2);访问不到函数中的局部变量
+		console.log(num3);
+
+
+		//js中函数的变量提升
+		function func(){
+			//变量提升
+			var num = 20;
+			p = 2
+		}
+
+		func();
+		console.log(p);
+
+
+	</script>
+
+</body>
+</html>

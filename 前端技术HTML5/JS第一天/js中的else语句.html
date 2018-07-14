@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的else语句</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			* 格式:
+			* if (表达式)
+			* {
+			*	语句1
+			* }
+			* else {
+			*   语句2
+			* }
+			*
+			* 逻辑: 当程序执i行到if--else语句时,首先计算"表达式"的值,如果表达式的值为真,则执行语句1.执行完语句1则跳过整个if-else语句继续向下执行.如果"表达式"的值为假,那么执行语句2,执行完语句2,则跳过整个if-else语句继续向下执行.
+		*/
+		var num = parseInt(prompt("请输入一个数字:"))
+
+		if (num % 2 == 0) {
+			console.log("num 是 偶数")
+		} else {
+			console.log("num 是 奇数")
+		}
+		
+	</script>
+
+</body>
+</html>

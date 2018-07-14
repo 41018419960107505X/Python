@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的函数(带有参数)</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+ 			*编写函数,给函数一个字符串,函数内部在控制台上打印出来
+		*/		
+		
+		//多个参数之间用","分隔
+		//此时str , age 可以成为形式参数(形参),本质是变量
+		function myConsole(str , age){
+			console.log(str, "he is" + age)
+		}
+
+		//此时()中的参数可以成为实际参数(实参),本质是值
+		//函数的调用过程本身是实参给形参赋值的过程
+		myConsole("sunck is good man " ,18 );
+
+		//对于已经传递进来的参数,js是来者不拒的,但是多余的参数会被忽略掉. 
+		myConsole("sunck is a good man " , 18 , "nice" , "handsome")
+
+		//arguments后期会讲解
+	</script>
+
+</body>
+</html>

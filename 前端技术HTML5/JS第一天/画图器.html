@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+#can{
+	border:1px solid deepskyblue;
+	position: relative;
+}
+		</style>
+</head>
+	<body>
+		<canvas id="can" width="450" height="300"></canvas>
+		<button id="qing">清除</button>
+	
+		<script type="text/javascript">
+			var qing = document.getElementById("qing");
+			var cha = document.getElementById("cha");
+			var can=document.getElementById("can");
+            var ctx=can.getContext("2d");
+          
+        can.onmousedown=function(event){
+              var x=event.clientX-can.offsetLeft;
+              var y=event.clientY-can.offsetTop;
+              ctx.beginPath();
+              ctx.moveTo(x,y);
+ 
+             document.onmousemove=function(event){
+             var x=event.clientX-can.offsetLeft;
+             var y=event.clientY-can.offsetTop;
+             ctx.lineTo(x,y);
+             ctx.strokeStyle="black";
+             ctx.stroke();
+            };
+        };
+         document.onmouseup=function(){
+             ctx.closePath();
+             document.onmousemove=null;
+         };
+         
+         qing.onclick = function(){
+         	ctx.clearRect(0,0,can.width,can.height)
+         }
+         cha.onclick = function(){
+         	
+         }
+		</script>
+	</body>
+</html>

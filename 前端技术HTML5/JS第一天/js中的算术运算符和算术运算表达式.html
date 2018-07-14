@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JS中的算术运算符和算术运算表达式</title>
+	<script src="JS/text.JS" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			*表达式: 由变量，常量和运算符组成的式子成为表达式
+			*如何阅读表达式?
+			*1. 阅读表达式的功能
+			*2. 阅读表达式的值
+
+		*/
+		
+		/*
+			*算术运算符: + - * / %(取余)
+
+			*算术运算表达式
+			*功能:进行符号对象的算术运算,不会改变变量的值
+			*值: 相关算术运算的结果
+
+		*/
+
+
+		//1.Number + Number 直接进行数学运算
+		var num1 = 10;
+		var num2 = 20;
+		console.log(num1 + num2);
+		//任何数与NaN进行运算结果都是NaN.
+		//2.Infinity +(-Infinity) = NaN
+
+		//2. Boolean/Undefined/Null + Number
+		//先转换为Number类型,然后进行数学运算
+		console.log(num1 + null);
+
+		//3. String + (Number/Boolean/Undefined/Null)
+		//+相当于是字符串的拼接
+		console.log("str" + null);
+
+	</script>
+
+</body>
+</html>

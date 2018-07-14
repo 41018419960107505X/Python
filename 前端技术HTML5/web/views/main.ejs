@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>My-个人博客</title>
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="/css/jquery.bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<script src="/javascripts/jquery-1.11.0.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">   
+					<ul class="nav navbar-nav">
+						<% if(name){ %>
+						<li><a href="#">欢迎:<%- name %></a></li>
+						<li class="active"><a href="/">主页</a></li>              
+						<li><a href="/about">关于我</a></li>
+						<li><a href="/liuyan">留言</a></li>
+						<% }else{ %>
+						<li><a href="/register">注册</a></li>
+						<li><a href="/login">登录</a></li>
+						<% } %>           
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#"><i class="fa fa-reddit"></i></a></li>
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div class="container">
+		<header>
+			<a href="/main"><img src="/images/logo.png"></a>
+		</header>
+		<section class="main-slider">
+			<ul class="bxslider">
+				<li><div class="slider-item"><img src="/images/1140x500-1.jpg" title="Funky roots" /><h2><a href="/post" title="Vintage-Inspired Finds for Your Home">阅读最大的乐趣就是从中找到自己不知道的事情</a></h2></div></li>
+				<li><div class="slider-item"><img src="/images/1140x500-2.jpg" title="Funky roots" /><h2><a href="/post" title="Vintage-Inspired Finds for Your Home">音乐是一种自由的、生气勃勃的艺术，一种充满新鲜空气的艺术</a></h2></div></li>
+				<li><div class="slider-item"><img src="/images/1140x500-3.jpg" title="Funky roots" /><h2><a href="/post" title="Vintage-Inspired Finds for Your Home">从旅行寻找属于自己真正的快乐</a></h2></div></li>
+			</ul>
+		</section>
+		<section>
+			<div class="row">
+				<div class="col-md-8">
+					<article class="blog-post">
+						<div class="blog-post-image">
+							<a href="/post"><img src="/images/750x500-1.jpg" alt=""></a>
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="/post">CSS命名规范——BEM思想</a></h2>
+							<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2018</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>BEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。</p>
+							<div class="read-more"><a href="/post">Continue Reading</a></div>
+						</div>
+					</article>
+					<!-- article -->
+					<article class="blog-post">
+						<div class="blog-post-image">
+							<a href="/post"><img src="/images/750x500-2.jpg" alt=""></a>
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="/post">Webpack 4.5 从入门到放弃</a></h2>
+							<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2018</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>解释 Webpack 的作用以及版本的更新换代等历史故事。阅读此部分将对 Webpack 有一个整体的认识。对 Webpack 的 Loader，Plugin 等部分进行详细的解释，以及常用组件的介绍。阅读此部分将会对 Webpack 的各种选项一个详细的认识。Webpack4.5版特性的介绍，以及其余的背景介绍。阅读此部分将会对 Webapck 4.5大版本的更新的原因以及其他的故事。</p>
+							<div class="read-more"><a href="/post">Continue Reading</a></div>
+						</div>
+					</article>
+					<!-- article -->
+					<article class="blog-post">
+						<div class="blog-post-image">
+							<a href="/post"><img src="/images/750x500-3.jpg" alt=""></a>
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="/post">微信小程序实践总结</a></h2>
+							<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2018</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>小程序开发框架的目标是通过尽可能简单、高效的方式让开发者可以在微信中开发具有原生 APP 体验的服务。框架提供了自己的视图层描述语言 WXML 和 WXSS，以及基于 JavaScript 的逻辑层框架，并在视图层与逻辑层间提供了数据传输和事件系统，可以让开发者可以方便的聚焦于数据与逻辑上。</p>
+							<div class="read-more"><a href="/post">Continue Reading</a></div>
+						</div>
+					</article>
+				</div>
+                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+				<div class="col-md-4 sidebar-gutter">
+					<aside>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">关于我</h3>
+						<div class="widget-container widget-about">
+							<a href="/post"><img src="/images/main.jpg" alt=""></a>
+							<h4>Haojie Wang</h4>
+							<div class="author-title">Designer</div>
+							<p>While everyone’s eyes are glued to the runway, it’s hard to ignore that there are major fashion moments on the front row too.</p>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="margin-bottom:20px;">写一篇新文章</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">新文章</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">主题</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">内容</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" id="send" class="btn btn-info">发表文章</button>
+      </div>
+    </div>
+  </div>
+</div>		
+						<div class="widget-container">
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-1.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">怎样写出优良性好的代码</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-2.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">js代码书写规范</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-3.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">一个值得借鉴的插件写法</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-4.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">设置html的根rem（随窗口改变自动调整）</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-5.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">关于javascript类的编写与继承的一些心得</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Socials</h3>
+						<div class="widget-container">
+							<div class="widget-socials">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-reddit"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Categories</h3>
+						<div class="widget-container">
+							<ul>
+								<li><a href="#">Fashion</a></li>
+								<li><a href="#">Art</a></li>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Featured</a></li>
+								<li><a href="#">Graphics</a></li>
+								<li><a href="#">Peoples</a></li>
+								<li><a href="#">Uncategorized</a></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		</div><!-- /.container -->
+
+		<footer class="footer">
+
+			<div class="footer-socials">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="#"><i class="fa fa-reddit"></i></a>
+			</div>
+
+			<div class="footer-bottom">
+				<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br>
+				More Templates <a href="http://www.baidu.com/" target="_blank" title="模板之家">百度</a> - Collect from <a href="http://www.weibo.com/" title="网页模板" target="_blank">微博</a>
+			</div>
+			
+		</footer>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script>//题目recipient-name,内容message-text
+		$('#send').click(function(){
+  		$.ajax({
+  			type:"post",
+  			url:"/users/main",
+			data:{tit:$('#recipient-name').val(),con:$('#message-text').val()},
+  			success:function(data){
+  				if(data==1){
+  					var str = ''
+  					str =`
+  					<article class="blog-post">
+						<div class="blog-post-image">
+							<a href="/post"><img src="/images/750x500-2.jpg" alt=""></a>
+						</div>
+  					<div class="blog-post-body">  					
+  					<h2><a href='#'>${$('#recipient-name').val()}</a></h2>
+  					<div class="post-meta"><span>by <a href="#">youself</a></span>/<span><i class="fa fa-clock-o"></i>june, 2018</span>/<span><i class="fa fa-comment-o"></i> <a href="#">0</a></span></div>
+ 					<p>${$('#message-text').val()}</p>
+  					<div class="read-more"><a href="/post">Continue Reading</a>
+  					</div>
+  					</div>
+  					</div>
+  					`
+  				$(".col-md-8").prepend(str)	
+  				alert('发表成功')
+  				}else{
+  					alert('发表失败')
+  					location.href='/'
+  				}
+  			}
+  		});
+  	})
+		</script>
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.bxslider.js"></script>
+		<script src="/js/mooz.scripts.min.js"></script>
+	</body>
+</html>

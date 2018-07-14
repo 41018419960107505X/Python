@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的swtich语句</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			* 格式:
+			* switch (表达式){
+			*     case  表达式1：
+			*           语句1
+			*     case  表达式2:
+			*           语句2
+			*     ......
+			*     case  表达式n:
+			*           语句n
+			*     default
+			*           语句f
+			*     }
+			* 注意: 当执行的程序到switch语句时,首先计算表达式的值,表达式的值能匹配到哪个case后的表达式那么就能跳到哪个case处继续向下执行. 没有匹配到的case表达式,且最后有一个default,那么会执行语句f.
+			*
+
+		*/
+		//break语句: 专门用来跳出switch语句和循环语句
+
+		var num = parseInt(promopt("请输入一个数字:"))
+		switch (num){
+			case 1:
+				console.log("星期1")
+				break;
+			case 2:
+				console.log("星期2")
+				break;
+			case 3:
+				console.log("星期3")
+				break;
+			case 4:
+				console.log("星期4")
+				break;
+			case 5:
+				console.log("星期5")
+				break;
+			case 6:
+				console.log("星期6")
+				break;
+			case 7:
+				console.log("星期7")
+				break;
+			default:
+				console.log("输入有误!")
+				break;
+		}
+
+		console.log(1?2:3)
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的do-while语句</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			*格式:
+			* while (表达式){
+			*       语句
+			*    }
+			*
+			*逻辑:  当程序执行到while语句时,首先计算"表达式"的值,若"表达式"的值为假,跳过整个while语句继续向下执行,如果表达式的值为真,那么执行大括号中的语句.执行完语句再去计算"表达式"的值.如果"表达式"的值为假,跳过整个while语句继续向下执行,如果表达式的值依然为真,执行语句,在去计算表达式的值,如此循环往复,直到"表达式"的值为假时才停止.
+			*
+			* 
+			
+		*/		
+		//1 + 2 + 3 ......+10的和
+		var num = 1;
+		var sum = 0;
+		while (num <= 10){
+			sum += num;
+			num++;
+		}
+
+		console.log("sum = " + sum)
+	</script>
+
+</body>
+</html>

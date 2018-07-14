@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>其它基本类型转换为Boolean类型</title>
+
+</head>
+<body>
+	<button>按钮</button>
+
+	<script type="text/javascript">
+		//绝大部分值在转换为Boolean类型值都为True,但是以下6种False
+		/*
+			*1. ""
+			*2. null
+			*3. undefined
+			*4. 0
+			*5. NaN
+			*6. false
+
+		*/
+		console.log(Boolean(""))
+		console.log(Boolean(null))
+		console.log(Boolean(undefined))
+		console.log(Boolean(0))
+		console.log(Boolean(NaN))
+		console.log(Boolean(false))		
+	</script>
+
+</body>
+</html>

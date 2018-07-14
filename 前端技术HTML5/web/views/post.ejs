@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>Renda - clean blog theme based on Bootstrap</title>
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="/css/jquery.bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">主页</a></li>
+						<li><a href="/about">关于我</a></li>
+						<li><a href="/liuyan">留言</a></li>
+						<li><a href="/register">注册</a></li>
+						<li><a href="/login">登录</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#"><i class="fa fa-reddit"></i></a></li>
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div class="container">
+		<header>
+			<a href="/main"><img src="/images/logo.png"></a>
+		</header>
+		<section>
+			<div class="row">
+				<div class="col-md-8">
+					<article class="blog-post">
+						<div class="blog-post-body">
+							<h2><a href="/post">前端小程序核心介绍</a></h2>
+							<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2018</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<div class="blog-post-text">
+                                <h3>基础的介绍框架</h3>
+								<p>小程序开发框架的目标是通过尽可能简单、高效的方式让开发者可以在微信中开发具有原生 APP 体验的服务。框架提供了自己的视图层描述语言 WXML 和 WXSS，以及基于 JavaScript 的逻辑层框架，并在视图层与逻辑层间提供了数据传输和事件系统，可以让开发者可以方便的聚焦于数据与逻辑上。</p>
+                                <h3>响应的数据绑定</h3>
+								<p>框架的核心是一个响应的数据绑定系统。整个系统分为两块视图层（View）和逻辑层（App Service）框架可以让数据与视图非常简单地保持同步。当做数据修改的时候，只需要在逻辑层修改数据，视图层就会做相应的更新。</p>
+								<h3>js</h3>
+								<p>小程序开发框架的逻辑层由 JavaScript 编写。<br />逻辑层将数据进行处理后发送给视图层，同时接受视图层的事件反馈。<br />
+在 JavaScript 的基础上，我们做了一些修改，以方便地开发小程序。<br />
+增加 App 和 Page 方法，进行程序和页面的注册。<br />
+增加 getApp 和 getCurrentPages 方法，分别用来获取 App 实例和当前页面栈。<br />
+提供丰富的 API，如微信用户数据，扫一扫，支付等微信特有能力。<br />
+每个页面有独立的作用域，并提供模块化能力。<br />
+由于框架并非运行在浏览器中，所以 JavaScript 在 web 中一些能力都无法使用，如 document，window 等。（js不能直接控制HTML里的内容，只能改变绑定的数据，这是开始接触时最不习惯的地方）<br />
+开发者写的所有代码最终将会打包成一份 JavaScript，并在小程序启动的时候运行，直到小程序销毁。类似 ServiceWorker，所以逻辑层也称之为 App Service。<br />
+</p>
+                                <h3>开发注意事项</h3>
+								<p>仔细阅读官方开发文档，注意版本更新，因为小程序的诞生时间还算比较短，所以有很多东西还需要更改，所以有可能你上一个版本还在使用的东西，下一个版本就已经淘汰了。微信小程序不是H5,所以不能把H5代码复制直接使用，某些组件和WXSS操作时要注意.例如我查询H5的CSS样式中的display属性默认为inline，但是我在微信小程序实用工具查询发现是block，还有就是组件的不适应，不识别。微信小程序虽然也是用js，但是某些js功能却无法使用，例如节点获取微信小程序调用无反应！经过我的查询，发现微信小程序无法使用DOM操作，对于小程序而言它的一切变化都是通过数据去进行驱动的！</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-4 sidebar-gutter">
+					<aside>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">关于我</h3>
+						<div class="widget-container widget-about">
+							<a href="/post"><img src="/images/main.jpg" alt=""></a>
+							<h4>Haijie Wang</h4>
+							<div class="author-title">Designer</div>
+							<p>While everyone’s eyes are glued to the runway, it’s hard to ignore that there are major fashion moments on the front row too.</p>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Featured Posts</h3>
+						<div class="widget-container">
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="post.html"><img src="/images/90x60-1.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">怎样写出优良性好的代码</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-2.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">js代码书写规范</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-3.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">一个值得借鉴的插件写法</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-4.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">设置html的根rem（随窗口改变自动调整）</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+							<article class="widget-post">
+								<div class="post-image">
+									<a href="/post"><img src="/images/90x60-5.jpg" alt=""></a>
+								</div>
+								<div class="post-body">
+									<h2><a href="/post">关于javascript类的编写与继承的一些心得</a></h2>
+									<div class="post-meta">
+										<span><i class="fa fa-clock-o"></i> 2. august 2017</span> <span><a href="/post"><i class="fa fa-comment-o"></i> 23</a></span>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Socials</h3>
+						<div class="widget-container">
+							<div class="widget-socials">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-reddit"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- sidebar-widget -->
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Categories</h3>
+						<div class="widget-container">
+							<ul>
+								<li><a href="#">Fashion</a></li>
+								<li><a href="#">Art</a></li>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Featured</a></li>
+								<li><a href="#">Graphics</a></li>
+								<li><a href="#">Peoples</a></li>
+								<li><a href="#">Uncategorized</a></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		</div><!-- /.container -->
+
+		<footer class="footer">
+
+			<div class="footer-socials">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="#"><i class="fa fa-reddit"></i></a>
+			</div>
+
+			<div class="footer-bottom">
+				<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br>
+				More Templates <a href="http://www.baidu.com/" target="_blank" title="模板之家">百度</a> - Collect from <a href="http://www.weibo.com/" title="网页模板" target="_blank">微博</a>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.bxslider.js"></script>
+		<script src="/js/mooz.scripts.min.js"></script>
+	</body>
+</html>

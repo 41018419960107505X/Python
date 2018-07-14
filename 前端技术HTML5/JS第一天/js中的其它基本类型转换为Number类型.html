@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>其它基本类型转换为Number类型</title>
+
+</head>
+<body>
+	<button>按钮</button>
+
+	<script type="text/javascript">
+		//Number()
+		//功能: 将其它类型的数据转换成Number类型的数据
+
+		//1.Null---Number
+		console.log(Number(null));//0
+
+		//2.Undefined---Number
+		console.log(Number(undefined));//NaN
+
+		//3.Boolean---Number
+		console.log(Number(true));//1
+		console.log(Number(false));//0
+
+		//4.String---Number
+		//如果字符串中只有数字，小数点，(最前面空格  正负号),则转换成对应的十进制数字
+		console.log(Number("123"));//123
+		console.log(Number("12.3"));//12.3
+		console.log(Number("+123"));//+123
+		console.log(Number("-123"));//-123
+		console.log(Number("    123"));//123
+
+		//如果是一个空字符串,则结果是0
+		console.log(Number(""))//0
+		console.log(Number("  "))//0
+
+		//如果字符串中含有非数字,非正负号，转换失败,结果为NaN
+		console.log(Number("123abc"));//NaN
+		console.log(Number("123+456"));//NaN
+		console.log(Number("abc"));//NaN
+
+
+		//parseInt()
+		//功能: 会试图将其收到的任何输入的值（通常是字符串）转换成整数类型,如果转换失败则返回NaN.
+		//转换规则:如果第一个非空白字符(空格,换行,tab)是数字或者是正负号则开始转换,直到碰到第一个非数字字符停止转换.如果第一个非空字符不是数字或者正负号.转换失败,结果是NaN.
+		console.log(parseInt("123"));//123
+		console.log(parseInt("+123"));//123
+		console.log(parseInt("-123"));//123
+		console.log(parseInt("  123"));//123
+		console.log(parseInt("12a3"));//12
+		console.log(parseInt("12.3");//12
+		console.log(parseInt("12 3"));//12
+		//NaN
+		console.log(parseInt("true"));
+		console.log(parseInt("  .123"));
+		console.log(parseInt("+-123"));
+
+		//parseFloat()
+		//功能:会将其收到的任何输入值(通常是字符串)转换成浮点数类型,如果转换失败则返回NaN.
+		console.log(parseFloat("  2.5a"));//2.5
+		console.log(parseFloat("  .56"));//0.56
+		console.log(parseFloat("   -.23"));//-0.23
+		console.log(parseFloat("   +.23 + .1"));//0.23
+		console.log(parseFloat("   3.14.956"));//3.14
+		console.log(parseFloat("a3.14"));//NaN
+
+		
+	</script>
+
+</body>
+</html>

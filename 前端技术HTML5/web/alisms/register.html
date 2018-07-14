@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<h1>短信注册</h1>
+	<div>手机号码: <input type="text" class="phonenum" /></div>
+	<div>密码: <input type="text" class="pass" /></div>
+	<div>短信验证码: <input type="text" class="yzm" /></div>
+	<button class="sendyzm">发送验证码</button>
+	<button class="register">注册</button>
+	
+</body>
+<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	$('.sendyzm').click(function(){
+		$.ajax({
+			type:"post",
+			url:"http://localhost:3000/register",
+			data:{phonenum:$('.phonenum').val(),id:'1'},
+			success:function(){
+				
+			}
+		});
+	})
+	
+	$('.register').click(function(){
+		$.ajax({
+			type:"post",
+			url:"http://localhost:3000/register",
+			data:{phonenum:$('.phonenum').val(),pass:$('.pass').val(),yzm:$('.yzm').val(),id:'2'},
+			success:function(data){
+				console.log(data)
+			}
+		});
+	})
+	
+	
+	
+</script>
+</html>

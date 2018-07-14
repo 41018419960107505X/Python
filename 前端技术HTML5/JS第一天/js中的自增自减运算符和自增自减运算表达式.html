@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JS中的自增自减运算符和自增自减运算表达式</title>
+
+</head>
+<body>
+	<button>按钮</button>
+
+	<script type="text/javascript">
+		/*
+			* 自增运算符  ++
+			* 自增运算表达式  ++变量  变量++
+			*
+			功能: a++,++a都是自增运算表达式,功能都是将a的值加1
+			* 值:
+			* a++成为加前取值,先取值在增值,表达式的值是a增加之前的值.
+			* ++a成为加之后取值,先增值在取值,表达式的值是a加后的值.
+		*/
+		var a = 1;
+		var b ;
+		b = a++
+		console.log(a);
+		console.log(b);
+
+		/*
+			* 自减运算符 --
+			* 自减运算符表达式  --变量  变量--
+			*
+			*功能: m--,--m都是自减运算符表式,功能都是将m的值减1
+			*值:
+			*m--成为减前取值,先取值在减少,表达式的值是m减少之前的值.
+			*--m成为减后取值,先减少在取值,表达式的值是m减少之后的值.
+		*/
+
+		var m =1;
+		var n;
+		n = m--;
+		console.log(n);
+		console.log(m);
+		
+	</script>
+
+</body>
+</html>

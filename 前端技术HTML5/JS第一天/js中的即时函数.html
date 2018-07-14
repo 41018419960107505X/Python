@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js中的即时函数</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			* 即时函数:这种函数可以在定义后立即使用
+			* 将定义好的匿名函数放进一对小括号中,然后外面在紧跟一对小括号即可.最后的一对小括号作用是"立即执行"的作用.同时它也是向匿名函数传递参数的地方.
+
+		*/
+		(function(str){
+			console.log("str = " + str);
+		})("sunck is a good man ");		
+		
+	</script>
+
+</body>
+</html>

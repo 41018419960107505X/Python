@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>Renda - clean blog theme based on Bootstrap</title>
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="/css/jquery.bxslider.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<script src="/javascripts/jquery-1.11.0.js"></script>
+        <script src="/javascripts/xheditor/xheditor-1.2.2.min.js"></script>
+		<script src="/javascripts/xheditor/xheditor_lang/zh-cn.js"></script>
+		<script src="/javascripts/fwb.js"></script>
+	</head>
+	<style type="text/css">
+		.form-control{
+   		width: 800px;
+   	}
+   	tr{
+   		width: 100px;
+   		border: 1px solid #ddd;
+   	}
+   	section{
+   		width: 800px;
+   		margin: auto;
+   	}
+   </style>
+  </head>
+  <body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">主页</a></li>
+						<li><a href="/about">关于我</a></li>
+						<li><a href="/liuyan">留言</a></li>
+						<li><a href="/register">注册</a></li>
+						<li><a href="/login">登录</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#"><i class="fa fa-reddit"></i></a></li>
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div class="container">
+		<header>
+			<a href="/"><img src="/images/logo.png"></a>
+		</header>
+		<section>
+			<div class="form-group">
+    <label for="exampleInputEmail1">标题</label>
+    <input type="text" class="form-control" id="tit" placeholder="username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">内容</label>
+    <textarea class="form-control xheditor" id="content"></textarea>
+  </div>
+ 
+  <button type="button" class="btn btn-info" id="btn">发布留言</button> 
+
+  <table class="table">
+  	<tr>
+  		<th>标题</th>
+  		<th>内容</th>
+  	</tr>
+  	
+  	<% data.map(function(item){ %>
+  		<tr>
+	  		<td><a style="color:deepskyblue;" href="/message?id=<%-item._id %>"><%-item.tit %></a></td>
+	  		<td><%-item.con %></td>
+	  	</tr>
+  	<% }) %>
+  	
+  </table>
+  
+		</section>
+		</div><!-- /.container -->
+
+		<footer class="footer">
+
+			<div class="footer-socials">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="#"><i class="fa fa-reddit"></i></a>
+			</div>
+
+			<div class="footer-bottom">
+				<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br>
+				More Templates <a href="http://www.baidu.com/" target="_blank" title="模板之家">百度</a> - Collect from <a href="http://www.weibo.com/" title="网页模板" target="_blank">微博</a>
+			</div>
+		</footer>
+		<script type="text/javascript">
+  	$('#btn').click(function(){
+  		$.ajax({
+  			type:"post",
+  			url:"/users/liuyan",
+  			data:{tit:$('#tit').val(),con:$('#content').val()},
+  			success:function(data){
+  				if(data==1){
+  					alert('留言成功')
+  					location.href='/liuyan'
+  				}else{
+  					alert('留言失败')
+  					location.href='/liuyan'
+  				}
+  			}
+  		});
+  	})
+  </script>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.bxslider.js"></script>
+		<script src="/js/mooz.scripts.min.js"></script>
+	</body>
+</html>
